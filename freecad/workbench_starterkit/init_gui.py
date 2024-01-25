@@ -5,12 +5,12 @@ from TranslateUtils import translate
 from freecad.workbench_starterkit import ICONPATH, TRANSLATIONSPATH
 
 
-class TemplateWorkbench(Gui.Workbench):
+class AISCWorkbench(Gui.Workbench):
     """
     class which gets initiated at startup of the gui
     """
-    MenuText = translate("starterkit", "template workbench")
-    ToolTip = translate("starterkit", "a simple template workbench")
+    MenuText = translate("starterkit", "AISC Workbench")
+    ToolTip = translate("starterkit", "A workbench to design using AISC Structual Steel")
     Icon = os.path.join(ICONPATH, "template_resource.svg")
     toolbox = []
 
@@ -28,7 +28,7 @@ class TemplateWorkbench(Gui.Workbench):
 
         from freecad.workbench_starterkit import my_numpy_function
         App.Console.PrintMessage(translate("Console",
-            "Switching to workbench_starterkit") + "\n")
+            "Switching to the AISC Workbench") + "\n")
         App.Console.PrintMessage(translate("Console", "Run a numpy function:") \
             + "sqrt(100) = {}\n".format(my_numpy_function.my_foo(100)))
 
